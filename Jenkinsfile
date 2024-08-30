@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Declarative: Checkout SCM') {
             steps {
-                git 'https://votre-repository-git.git'
+                git 'git@github.com:charleskiliya/CI-CD-With-Jenkins.git'
             }
         }
 
         stage('Git Checkout') {
             steps {
                 echo 'Cloning the repository...'
-                sh 'git clone https://votre-repository-git.git'
+                sh 'git@github.com:charleskiliya/CI-CD-With-Jenkins.git'
             }
         }
 
